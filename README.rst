@@ -7,7 +7,7 @@
 omero-annotation_scripts
 ==================================
 
-"pip installable OMERO.scripts for annotation workflows"
+pip installable OMERO.scripts for annotation workflows
 
 
 Requirements
@@ -27,6 +27,10 @@ Install the command-line tool using `pip <https://pip.pypa.io/en/stable/>`_:
 ::
 
     $ pip install -U omero-annotation_scripts
+
+    # Upload scripts to OMERO
+
+    omero annotation_scripts upload
 
 Release process
 ---------------
@@ -55,4 +59,4 @@ licensed under the terms of the GNU General Public License (GPL) v2 or later.
 Copyright
 ---------
 
-2017-2020, The Open Microscopy Environment
+2017-2024, The Open Microscopy Environment
