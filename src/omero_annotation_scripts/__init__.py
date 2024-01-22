@@ -45,7 +45,7 @@ class Annotation_scriptsControl(BaseControl):
     def upload(self, args):
         conn = BlitzGateway(client_obj=self.ctx.conn(args))
         if not conn.isAdmin():
-            self.ctx.out("You need to be an Admin to upload scripts")
+            self.ctx.die(567123, "You need to be an Admin to upload scripts")
         script_path = os.path.dirname(os.path.abspath(__file__))
         scripts_dir = os.path.join(os.path.dirname(script_path), "scripts")
 
