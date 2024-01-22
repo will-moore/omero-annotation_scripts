@@ -1,0 +1,13 @@
+#!/usr/bin/env make -f
+release:
+ifndef VERSION
+	$(error VERSION is undefined)
+endif
+	git describe --exact
+	python setup.py sdist
+	echo twine upload dist/omero-annotation_scripts-$(VERSION).tar.gz
+
+clean:
+	rm -rf build dist omero-annotation_scripts.egg-info *.pyc
+
+.PHONY: release clean
